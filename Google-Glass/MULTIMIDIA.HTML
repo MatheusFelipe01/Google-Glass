@@ -1,0 +1,107 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+    </style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Arquivos multimidia</title>
+
+    <link rel="stylesheet" href="AddMedia.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="AddMedia.js"></script>
+    <style>
+        article header h3 {
+            color: #474747;
+            margin-bottom: 5px;
+            
+        }
+        article header h1 {
+            font-size: 25pt;
+            color: #575757;
+            font-family: 'Noto Sans Mono', monospace;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        article header h2 {
+            background-color: rgba(0, 0, 0, .4);
+            padding: 5px;
+            color: #f0f0f0;
+            margin-top: 0px;
+            font-size: 12pt;
+        }
+        article header h4 {
+            text-align: right;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body">
+    <div id="interface">
+
+        <header id="cabeca">
+            <colgroup>
+                <h1> Google  Glass </h1>
+                <h2> A revolução do google está chegando </h2>
+            </colgroup>
+        
+        <figure>
+                <img id="glass" src="imagens/google-glass.png" width="220px" height="220px">
+        </figure>
+
+        <nav id="menu">                    <!-- menu de NAVegação-->
+            <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MENU PRINCIPAL </h1>  <!-- &nbsp; is a blank space-->
+            <Ul type="square">
+                    <li onmouseover="mudaFoto('./IMAGENS/casa-home.png')" onmouseout="mudaFoto('./IMAGENS/menu-multimidia.png')">
+                        <a href="AddMedia.html" target="_self"> HOME </a>
+                    </li>       
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-especificacoes.png')" onmouseout="mudaFoto('./IMAGENS/menu-multimidia.png')">
+                         <a href="specs.html" target="_self" > ESPECIFICAÇÕES </a>
+                    </li>
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-fotos.png')" onmouseout="mudaFoto('./IMAGENS/menu-multimidia.png')">
+                         <a href="FOTOS.HTML" target="_self"> FOTOS  </a>
+                    </li>
+                    <Li onmouseover="mudaFoto('./IMAGENS/menu-multimidia.png')" onmouseout="mudaFoto('./IMAGENS/menu-multimidia.png')">
+                         <a href="MULTIMIDIA.HTML" target="_self"> MULTIMÍDIA  </a>
+                    </Li>
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-fale-conosco.png')" onmouseout="mudaFoto('./IMAGENS/menu-multimidia.png')">
+                         <a href="FALECONOSCO.HTML" target="_self"> FALE CONOSCO  </a>
+                    </li>
+            </Ul>
+        </nav>
+        </header>
+            <section>
+                <article>
+                    <header>
+                        <colgroup>
+                            <h3>Google > Multimidia</h3>
+                            <H1> Sons e Videos </H1>
+                            <H2> por Matheus Felipe</H2>
+                            <h4> Atualizado em 19/04/2022</h4>
+                        </colgroup>
+                    </header>
+                    <p id="subtitle"> Aqui está uma pequena e completa introdução de como usar o Google Glass!! </p> 
+    <div id="tv-radio">
+        <audio id="audio" controls="controls">
+            <source src="./media/audio01.mp3" type="audio/mpeg"/>
+
+        </audio>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        <!-- <video id="video" controls="controls" poster="./media/mini-thumbnail.png">
+            <source src="./media/video460.mp4" type="video/mp4"/>
+
+        </video> -->
+
+    </div>   
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  --> <!-- Colocar um video direto do YouTube !-->           
+
+<footer id="footer">
+    Copyright&copy; 2022 by Matheus Felipe <br/>
+    <a href="https://www.youtube.com/channel/UCLEZf7C2Zb1RP9HamXER6sQ" target="_blank">YouTube</a>/<a href="https://www.facebook.com/profile.php?id=100031501023989" target="_blank">Instagram</a> 
+</footer>
+                    
+<script src="AddMedia.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    padding: 40px;
+    text-indent: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: blueviolet;
+}
+nav ul {
+    
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    
+}
+nav a {
+    color: white;
+    text-decoration: none; /* tirar underline da nav bar */ 
+    
+}
+
+nav a:hover {
+    color: aqua;
+
+}
+
+header div img {
+    height: 12%;
+    width: 12%;
+    
+}
+header div#div1 {
+    text-align: center;
+    
+}
+div p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+p{
+    text-indent: 20px;
+}
+
+h1 {
+    color: aqua;
+}
+
+
+

@@ -1,0 +1,110 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+    </style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Arquivos multimidia</title>
+
+    <link rel="stylesheet" href="AddMedia.css">
+    <link rel="stylesheet" href="specs.css">
+    <style>
+        article header h3 {
+            color: #474747;
+            margin-bottom: 5px;
+            
+        }
+        article header h1 {
+            font-size: 25pt;
+            color: #575757;
+            font-family: 'Noto Sans Mono', monospace;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        article header h2 {
+            background-color: rgba(0, 0, 0, .4);
+            padding: 5px;
+            color: #f0f0f0;
+            margin-top: 0px;
+            font-size: 12pt;
+        }
+        article header h4 {
+            text-align: right;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body">
+    <div id="interface">
+
+        <header id="cabeca">
+            <colgroup>
+                <h1> Google  Glass </h1>
+                <h2> A revolução do google está chegando </h2>
+            </colgroup>
+        
+        <figure>
+                <img id="glass" src="imagens/google-glass.png" width="220px" height="220px">
+        </figure>
+
+        <nav id="menu">                    <!-- menu de NAVegação-->
+            <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MENU PRINCIPAL </h1>  <!-- &nbsp; is a blank space-->
+            <Ul type="square">
+                    <li onmouseover="mudaFoto('./IMAGENS/casa-home.png')" onmouseout="mudaFoto('./IMAGENS/menu-especificacoes.png')">
+                        <a href="AddMedia.html" target="_self"> HOME </a>
+                    </li>       
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-especificacoes.png')" onmouseout="mudaFoto('./IMAGENS/menu-especificacoes.png')">
+                         <a href="specs.html" target="_self" > ESPECIFICAÇÕES </a>
+                    </li>
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-fotos.png')" onmouseout="mudaFoto('./IMAGENS/menu-especificacoes.png')">
+                         <a href="FOTOS.HTML" target="_self"> FOTOS  </a>
+                    </li>
+                    <Li onmouseover="mudaFoto('./IMAGENS/menu-multimidia.png')" onmouseout="mudaFoto('./IMAGENS/menu-especificacoes.png')">
+                         <a href="MULTIMIDIA.HTML" target="_self"> MULTIMÍDIA  </a>
+                    </Li>
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-fale-conosco.png')" onmouseout="mudaFoto('./IMAGENS/menu-especificacoes.png')">
+                         <a href="FALECONOSCO.HTML" target="_self"> FALE CONOSCO  </a>
+                    </li>
+            </Ul>
+        </nav>
+        </header>
+            <section>
+                <article>
+                    <header>
+                        <colgroup>
+                            <h3>Google > Especificações</h3>
+                            <H1> Raio-X no Google Glass </H1>
+                            <H2> por Matheus Felipe</H2>
+                            <h4> Atualizado em 19/04/2022</h4>
+                        </colgroup>
+                    </header>
+                            <p id="subtitle"> Clique em qualquer área em vermelho para te levar a um lugar cheio de novas informações </p>
+
+                    <section id="conteudo">
+                        <img src="./IMAGENS/glass-esquema-marcado.jpg" usemap="#oculos"/>
+                        <map name="oculos">
+                                <area shape="rect" coords="180,214,270,249" href="google.glass2.html#tela" target="janela"/>
+                                <area shape="circle" coords="157,244,12" href="google.glass2.html#camera" target="janela"/>
+                                <area shape="circle" coords="75,51,12" href="google.glass2.html#bateria" target="janela"/>
+                                <area shape="poly" coords="27,142,80,214,83,251,26,165" href="google.glass2.html#sensores" target="janela"/>
+                            
+                        </map>
+                        <iframe src="google.glass2.html" name="janela" id="frame-specs"> </iframe>
+
+
+                    </section>
+                </article>
+            </section>
+
+
+<footer id="footer">
+    Copyright&copy; 2022 by Matheus Felipe <br/>
+    <a href="https://www.youtube.com/channel/UCLEZf7C2Zb1RP9HamXER6sQ" target="_blank">YouTube</a>/<a href="https://www.facebook.com/profile.php?id=100031501023989" target="_blank">Instagram</a> 
+</footer>
+
+<script src="AddMedia.js"></script>
+</body>
+</html>

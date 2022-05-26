@@ -1,0 +1,26 @@
+@charset "UTF-8";
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+iframe#frame-specs {
+    width: 450px;
+    height: 280px;
+    position: absolute;
+    right: 100px;
+    border: none;
+    overflow: hidden;
+}
+iframe#frame-specs::-webkit-scrollbar {
+    display: none;
+
+}
+p#subtitle {
+    background-color: #a09f9f;
+    width: fit-content;
+    padding: 10px 10px 10px 0px;
+    color: white;
+    font-weight: bolder;
+    margin-left: 20px;
+    border-radius: 20px;
+}

@@ -1,0 +1,205 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+    </style>
+<!DOCTYPE html>;
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Arquivos multimidia</title>
+
+    <link rel="stylesheet" href="AddMedia.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="AddMedia.js"></script>
+    <script src="fale-conosco.js"></script>
+    <style>
+        article header h3 {
+            color: #474747;
+            margin-bottom: 5px;
+            
+        }
+        article header h1 {
+            font-size: 25pt;
+            color: #575757;
+            font-family: 'Noto Sans Mono', monospace;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        article header h2 {
+            background-color: rgba(0, 0, 0, .4);
+            padding: 5px;
+            color: #f0f0f0;
+            margin-top: 0px;
+            font-size: 12pt;
+        }
+        article header h4 {
+            text-align: right;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body">
+    <div id="interface">
+
+        <header id="cabeca">
+            <colgroup>
+                <h1> Google  Glass </h1>
+                <h2> A revolução do google está chegando </h2>
+            </colgroup>
+        
+        <figure>
+                <img id="glass" src="imagens/google-glass.png" width="220px" height="220px">
+        </figure>
+
+        <nav id="menu">                    <!-- menu de NAVegação-->
+            <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MENU PRINCIPAL </h1>  <!-- &nbsp; is a blank space-->
+            <Ul type="square">
+                    <li onmouseover="mudaFoto('./IMAGENS/casa-home.png')" onmouseout="mudaFoto('./IMAGENS/menu-fale-conosco.png')">
+                        <a href="AddMedia.html" target="_self"> HOME </a>
+                    </li>       
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-especificacoes.png')" onmouseout="mudaFoto('./IMAGENS/menu-fale-conosco.png')">
+                         <a href="specs.html" target="_self" > ESPECIFICAÇÕES </a>
+                    </li>
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-fotos.png')" onmouseout="mudaFoto('./IMAGENS/menu-fale-conosco.png')">
+                         <a href="FOTOS.HTML" target="_self"> FOTOS  </a>
+                    </li>
+                    <Li onmouseover="mudaFoto('./IMAGENS/menu-multimidia.png')" onmouseout="mudaFoto('./IMAGENS/menu-fale-conosco.png')">
+                         <a href="MULTIMIDIA.HTML" target="_self"> MULTIMÍDIA  </a>
+                    </Li>
+                    <li onmouseover="mudaFoto('./IMAGENS/menu-fale-conosco.png')" onmouseout="mudaFoto('./IMAGENS/menu-fale-conosco.png')">
+                         <a href="FALECONOSCO.HTML" target="_self"> FALE CONOSCO  </a>
+                    </li>
+            </Ul>
+        </nav>
+        </header>
+            <section>
+                <article>
+                    <header>
+                        <colgroup>
+                            <h3>Google > Fale Conosco</h3>
+                            <H1> Raio-X no Google Glass </H1>
+                            <H2> por Matheus Felipe</H2>
+                            <h4> Atualizado em 19/04/2022</h4>
+                        </colgroup>
+                    </header>
+        <form method="post" id="form-contato" action="mailto:mathprofessional20123@gmail.com">
+            <img src="./IMAGENS/form.png" id="img-form"/>
+            <fieldset id="info01">
+                <legend>Identificação do usuário </legend>
+                <p> <label for="nome" class="labels"> Nome : </label> <input type="text"  maxlength="30" placeholder="Nome completo" id="nome"></p>
+                <p> <label for="senha" class="labels"> Senha : </label> <input type="password" size="10" maxlength="10" placeholder="10 dígitos" id="senha"> </p>
+                <p><label for="celular" class="labels"> Celular :</label> <input size="13" type="tel" id="celular"placeholder="(DDD) 9xxxx - xxxx"/> </p>
+                <p> <label for="email"class="labels"> E-mail : </label> <input type="email" id="email" size="25" maxlength="40"> </p>
+                    <fieldset id="sexo">
+                         <legend> Sexo  </legend>
+                        <input type="radio" id="masc" name="sex" checked> 
+                        <label for="masc">Masculino</label>
+                        <input type="radio" id="femin" name="sex">
+                        <label for="femin"> Feminino </label>
+                    </fieldset>
+                    
+                <p> <label for="data" class="labels"> Data de Nascimento </label> <input type="date" id="data"> </p>
+                    
+            </fieldset> 
+            <fieldset id="endereco">
+            <legend>Endereço </legend>
+                <p> <label for="logradouro" class="labels">Logradouro :</label> <input id="logradouro" type="text" size="20" maxlength="50" placeholder="Av , Rua .."> </p>
+                <p> <label for="numero" class="labels">Número :</label> <input id="numero" type="number" min="0" max="99999" size="3" placeholder="1234"></p> 
+                <p> <label for="estado" class="labels"> Estado : </label> <!-- Colocar todos os Estados do Brasil com suas regiões ! -->
+                <select id="estado">
+                    <option value="null" selected> &lt;select&gt; </option>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP"> São Paulo </option>
+                        <option value="RJ"> Rio de Janeiro </option>
+                        <option value="ES"> Espirito Santo </option>
+                        <option value="MG"> Minas Gerais </option>
+                    </optgroup>
+                    <optgroup label="Região Sul">    
+                        <option value="PR"> Paraná </option>
+                        <option value="SC"> Santa Catarina  </option>
+                        <option value="RS"> Rio Grande do Sul </option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                        <option value="DF"> Distrito Federal </option>
+                        <option value="MT"> Mato Grosso </option>
+                        <option value="MS"> Mato Grosso do Sul</option>
+                        <option value="GO"> Goias </option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="AL"> Alagoas </option>
+                        <option value="BA"> Bahia </option>
+                        <option value="CE"> Ceara </option>
+                        <option value="MA"> Maranhão </option>
+                        <option value="PB"> Paraiba </option>
+                        <option value="PE"> Pernambuco </option>
+                        <option value="PI"> Piauí </option>
+                        <option value="RN"> Rio Grande do Norte </option>
+                        <option value="SE"> Sergipe </option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="TO"> Tocantins </option>
+                        <option value="AC"> Acre </option>
+                        <option value="AP"> Amapá </option>
+                        <option value="AM"> Amazonas </option>
+                        <option value="PR"> Pará </option>
+                        <option value="RO"> Rondônia </option>
+                        <option value="RR"> Roraima </option>
+                    </optgroup>
+                </select> </p>
+
+                <p><label for="cidade" class="labels"> Cidade :</label> <input type="text" id="cidade" size="10" maxlength="20" placeholder="Sua cidade" list="cidades"/> <!-- Colocar todas as capitais do Brasil , pelo menos !-->
+                    <datalist id="cidades">
+                        <option value="Rio Branco" ></option>
+                        <option value="Maceió"></option>
+                        <option value="Macapá"></option>
+                        <option value="Mariaus"></option>
+                        <option value="Salvador"></option>
+                        <option value="Fortaleza"></option>
+                        <option value="Brasília"></option>
+                        <option value="Vitória"></option>
+                        <option value="Goiâna"></option>
+                        <option value="São Luis"></option>
+                        <option value="Cuiabá"></option>
+                        <option value="Campo Grande"></option>
+                        <option value="Belo Horizonte"></option>
+                        <option value="Belém"></option>
+                        <option value="João Pessoa"></option>
+                        <option value="Curitiba"></option>
+                        <option value="Recife"></option>
+                        <option value="Teresina"></option>
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Natal"></option>
+                        <option value="Porto Alegre"></option>
+                        <option value="Porto Velho"></option>
+                        <option value="Boa Vista"></option>
+                        <option value="Florianópolis"></option>
+                        <option value="São Paulo"></option>
+                        <option value="Aracaju"></option>
+                        <option value="Palmas"></option>
+                    </datalist>
+                </p>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend> Mensagem </legend>
+                <p> <label id="teste" for="Range" class="labels"> Grau de urgência  </label> Min<input id="Range" type="range" min="0" max="10" step="2"/>Max </p>
+                <p><label for="Tarea" class="labels"> Mensagem  <textarea id="Tarea" cols="30" rows="5" placeholder="Tell us your experience here !"> </textarea>  </p>
+            </fieldset>
+            <fieldset id="glass" oninput="calcular()">
+                <legend> Quero um Google Glass </legend>
+                <p> <input type="checkbox" id="comprar" checked/> <label for="comprar" class="labels"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+                <p> <label for="cor" class="labels"> Cor  </label> <input type="color" id="cor" value="#FF0000"/> </p> 
+                <p> <label for="quantidade" class="labels"> Quantidade  </label> <input type="number" id="quantidade" size="2" min="0" max="10" value="0"/> </p> 
+                <p> <label for="total" class="labels"> Valor total  </label> <input type="text" id="total" placeholder="Valor a pagar" readonly size="10" /> </p>
+            </fieldset>
+        </form>
+        <input type="submit" id="submit" onclick="enviar()">
+
+<footer id="footer">
+    Copyright&copy; 2022 by Matheus Felipe <br/>
+    <a href="https://www.youtube.com/channel/UCLEZf7C2Zb1RP9HamXER6sQ" target="_blank">YouTube</a>/<a href="https://www.facebook.com/profile.php?id=100031501023989" target="_blank">Instagram</a> 
+</footer>
+                    
+<script src="AddMedia.js"></script>
+</body>
+</html>

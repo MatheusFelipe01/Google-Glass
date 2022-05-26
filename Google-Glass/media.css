@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div#tv-radio {
+    width: 1000px;
+    height: 715px;
+    margin: auto;
+    background: url(./media/tvradio.png) no-repeat;
+}
+audio#audio {
+    transform: scale(0.66);
+    display: block;
+    position: relative;
+    top: 650px;
+    left: 745px
+}
+iframe#video {
+    transform: scale(1.65);
+    display: block;
+    position: relative;
+    top: 120px; 
+    left:220px;
+}
+p#subtitle {
+    background-color: #b9b9b9;
+    color: white;
+    width: fit-content;
+    padding: 10px 10px 10px 0px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-left: 170px;
+    margin-bottom: 0px;
+}

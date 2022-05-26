@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Code+Pro:wght@200&family=Titillium+Web:wght@200&display=swap'); /* adicionar fonte com @import */
+@font-face {
+    font-family: 'LogoFont';   /* adicionar fonte com @font-face */
+    src: url(../Fonts/Arual.ttf);
+}
+@font-face {
+    font-family: 'CodeFont';
+    src: url(../fonts/SourceCode.ttf);
+}
+body {
+    background-color: #dddddd;
+    /*background-color: hsl(180, 80% , 75%);     hue , sturation , luminosidade
+    background-image: url(IMAGENS/fundo.jpg) ; // colocar imagem de fundo
+    background-color: #78b8dd; héxa decimal      // decimal 
+    background-color: rgb(135, 137, 195);      // RGB  */
+    font-family: Arial , sans-serif ;
+    color: rgb(0, 0, 0,); /* RGBA : A = TRANSPARÊNCIA */  
+}
+a{
+    color: #606060;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+div#interface {
+    background-color:#ffffff;
+    width: 1000px;
+    margin: -20px auto 0px auto  ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+p {
+    text-align: justify;
+    text-indent: 15px; /* começar longe da borda */
+}
+
+figure.figure_legenda {
+    position: relative;  /* não entendi */
+    width: fit-content;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px black; /* horizontal - vertical - opacidade - cor */
+
+}
+figure.figure_legenda figcaption {
+    opacity: 0;
+    position: absolute;  /* não entendi */
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* não entendi */  
+}
+figure.figure_legenda:hover figcaption {
+    opacity: 1 ;
+    transition: opacity 1s;
+}
+
+/* formatação do menu */
+nav#menu {
+    display: block;
+}
+nav#menu ul {    /* modificar todos os UL que estão na nav com id=menu */
+    list-style: none; /* o estilo da lista UL como none; = sem o ponto ordenando*/
+    text-transform: uppercase; /* transformar texto em caixa alta */
+    position: absolute;  /* absolute fica preso dentro do bloco , relativo é em relação a página toda */ 
+    left: 470px ; 
+    top: -5px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2;
+    transition: background-color 1s;
+}
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 1s;
+}
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav#menu h1{
+    display: none;
+}
+img#glass {
+    position: absolute;
+    left: 930px;
+    top: 55px;
+}
+
+header#cabeca {
+    border-bottom: 2px #606060 solid; /* largura - cor - formato = solid , dashed , outset e inset */
+    height: 170px;
+    background: url(./IMAGENS/glass-brand-small.png) no-repeat 0px 90px; /* não repetir a imagem por ser pequena demais */
+    
+}
+header#cabeca h1 {
+    font-family: 'CodeFont', sans-serif;
+    color: #606060;
+    font-size: 30pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabeca h2 {
+    font-family: 'Titillium Web', sans-serif; /* @import + 'font-family' dada pelo google.com/fonts */
+    font-size: 15pt;
+    color: #cecece;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.5);
+    padding: 0px; 
+    margin-top: 5px;
+}
+
+section#corpo {
+    display: block; /* ser exibida como um bloco */
+    width: 500px;
+    float: left;
+    border-right: 2px solid #606060;
+    padding-right: 35px;
+    padding-bottom: 20px;
+}
+section#corpo h3 {
+    font-size: 15px;
+    font-family: 'CodeFont';
+    color: #808080;
+}
+section#corpo h2#works {
+    margin-top: 15px;
+}
+section#corpo h3#fromme {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dfdfdf;
+    background-color: #9e9e9e;
+    padding: 5px;
+}
+    /* article */
+article#article h2{
+    font-size: 15pt;
+    color: #606060;
+    background-color: #dddddd;
+    margin: 0px 10px 0px 10px ;
+    padding: 8px;
+}
+    /* cabeçalho article */ 
+header#cabecalho-artigo h1 {
+    font-family: 'LogoFont', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+header#cabecalho-artigo h2 {
+    background-color: #ffffff;
+    font-size: 10pt;
+    text-align: right;
+    
+}
+h3#fromme {
+    margin-top: -17px;
+    padding: 0px;
+}
+
+    /* configuração tabela */
+table#first {
+    border: 1px solid #606060;
+    border-spacing: 0px ;        /* tirar espaço de todas as table data */ 
+    margin-left: auto;           /* margem esquerda automatica */
+    margin-right: auto;          /* margem direita automática também para ficar no meio da section */
+}
+table#first td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;      /* alinhar verticalmente */
+}
+table#first .td1 {
+    text-align: right;
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+table#first .td2 {
+    text-align: left;
+    background-color: #cecece;
+}
+table#first caption {
+    color: #888888;
+    font-weight: bolder;
+    font-size: 15pt;
+}
+table#first caption span{
+    color: black;
+    display: block;
+    float: right;
+    font-size: 13px;
+    margin-top: 8pt;
+}
+table caption#tabela-tec {
+    margin-top: 10px;
+}
+aside#lateral {
+    display: block;
+    width: 430px;
+    float: right;
+    background-color: #dddddd;
+    margin-top: 10px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5)
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-family: 'LogoFont',sans-serif;
+    font-size: 15pt;
+    color: #ffffff;
+    padding: 5px;
+}
+aside#lateral h1 {
+    font-family: 'LogoFont', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    padding-left: 15px;
+}
+footer#footer {
+    padding-top: 10px;
+    text-align: center;
+    clear: both;
+    border-top: 2px solid #606060;
+}
+footer#footer a {
+    color: black;
+}
+
+
+
+
+
+
+
+
+ 
+
